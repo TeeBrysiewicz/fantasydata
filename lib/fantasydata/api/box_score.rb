@@ -23,9 +23,9 @@ module Fantasydata
 
 
       def box_scores_by_date sport=:nfl, date
-        if sport == :nfl
+        if sport == "nfl"
           klass = Fantasydata::BoxScore
-        elsif sport == :mlb
+        elsif sport == "mlb"
           klass = Fantasydata::MLBBoxScore
         end
 
